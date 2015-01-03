@@ -1,0 +1,187 @@
+/**
+ * Main Style Sheet
+ * VGI Site Mobile
+ *
+ * Copyright (c) 2014. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+ div.inner_wrap {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 1200px;*/
+	position: relative;
+}
+
+a.phone{
+	display:block;
+	width:220px; 
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-left: 25px;
+	background :linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 99.49%);	
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto 100%;
+	border-radius : 10px;
+ 	text-shadow : 2px 2px 7px rgba(0, 0, 0, 0.6);
+ 	text-decoration: none;
+ 	font-size: 2.0em;
+ 	font-weight: bold;
+ 	color : #FFFFFF;
+ 	transition:all 0.3s;
+}
+
+a.phone .phone_svg{
+	display:inline-block;
+	vertical-align: top;
+	width: 35px;
+	fill:white;
+
+}
+
+header {
+	background-color: white;
+}
+
+header div.logo {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+header div.logo div.inner_wrap {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size:auto 50px;
+	text-align: left;
+
+}
+
+header div.logo div.inner_wrap a.phone {
+	background: white;
+	color: #16A61E;
+	box-shadow: none;
+}
+
+header div.logo div.inner_wrap a.phone .phone_svg {
+	fill:#16A61E;
+
+}
+
+header div.header_content {
+	background-image: url(../images/mobile-header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size:auto 600px;
+	min-height: 600px; 
+}
+
+header div.header_content div.inner_wrap h1 {
+	display: block;
+	padding-top: 90px;
+	margin: 0px;
+	text-align: center;
+	font-weight : bold;
+	font-size: 2.2em;
+	color: #FFFFFF;
+	text-shadow : 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+header div.header_content > div.inner_wrap > span:nth-of-type(1) {
+	display: block;
+	text-align: center;
+	font-size: 1.6em;
+	color: #FFFFFF;
+	text-shadow : 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+header div.header_content > div.inner_wrap > span:nth-of-type(2) {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 40px;
+	background-color: rgba(35, 31, 32, 0.4); 
+	background-image: url(../images/stamp.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 240px 240px;
+	border-radius: 50%;
+	height: 240px;
+	width: 280px;
+}
+
+header div.header_content > div.inner_wrap > span:nth-of-type(3) {
+	display: block;
+	padding-bottom: 15px;
+	text-align: center;
+	font-size: 1.4em;
+	text-shadow : 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+header div.header_content div.inner_wrap  div.product {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-right: 150px;
+	width: 150px;
+	text-align: right;
+	color:#33485d;
+	
+}
+
+header div.header_content div.inner_wrap  div.product span:first-of-type {
+	display: block;
+	font-size: 3em;
+	font-weight: 900;
+	text-transform: uppercase;
+	position: relative;	
+}
+
+header div.header_content div.inner_wrap  div.product:nth-of-type(1) span:first-of-type:after {
+	content: "";
+	position: absolute;
+	top:0px;
+	left: 100%;
+	background-image: url(../images/kf10.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:auto 140px;
+	height: 140px; 
+	width: 140px;
+}
+
+header div.header_content div.inner_wrap  div.product:nth-of-type(2) span:first-of-type:after {
+	content: "";
+	position: absolute;
+	top:0px;
+	left: 100%;
+	background-image: url(../images/kf10-20.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:auto 140px;
+	height: 140px; 
+	width: 140px;
+}
+
+header div.header_content div.inner_wrap  div.product span:last-of-type {
+	display: block;
+	font-size: 1.1em;
+}
+
+
+
+
+
+
