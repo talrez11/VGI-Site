@@ -13,20 +13,28 @@
 			<header>
 					<div class="logo">
 						<div class="inner_wrap">
-							<a
-								href="'tel:'.urlencode(Language::getText('phone'))"
-								cms:eval="href"
-								class="phone"
-								>
-								<cms:text constant="phone"/>
-								<cms:raw file="../images/icon-phone.svg"/>
-							</a>
+							<cms:desktop>
+								<a
+									href="'tel:'.urlencode(Language::getText('phone'))"
+									cms:eval="href"
+									class="phone"
+									>
+									<cms:text constant="phone"/>
+									<cms:raw file="../images/icon-phone.svg"/>
+								</a>
+							</cms:desktop>
+							<cms:mobile>
+									<cms:raw file="../images/icon-phone.svg"/>
+							</cms:mobile>
 						</div>					
 					</div>
 					<div class="header_content">
 						<div class="inner_wrap">
 							 <h1><cms:text constant="vgi_header"/></h1>
 							 <span><cms:text constant="vgi_header_desc"/></span>
+							 <cms:mobile>
+										<span></span>						 		
+							 </cms:mobile>
 							 <span><cms:text constant="call_now"/></span>
 							 <a
 								href="'tel:'.urlencode(Language::getText('phone'))"
@@ -36,10 +44,16 @@
 								<cms:text constant="phone"/>
 								<cms:raw file="../images/icon-phone.svg"/>
 							</a>
-							<div class="product">
-								<span><cms:text constant="kf10"/></span>
-								<span><cms:text constant="kf10_desc"/></span>
-							</div>
+								<div class="product">
+										<span><cms:text constant="kf10"/></span>
+										<span><cms:text constant="kf10_desc"/></span>
+								</div>
+							<cms:mobile>
+								<div class="product">
+										<span><cms:text constant="kf20"/></span>
+										<span><cms:text constant="kf20_desc"/></span>
+								</div>
+							</cms:mobile>																																					
 
 						</div>
 						<div class="form_wrap">
