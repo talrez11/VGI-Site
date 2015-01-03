@@ -9,7 +9,144 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<h1>It works!</h1>
+			<!-- Top Part Of The Site -->
+			<header>
+					<div class="logo">
+						<div class="inner_wrap">
+							<a
+								href="'tel:'.urlencode(Language::getText('phone'))"
+								cms:eval="href"
+								class="phone"
+								>
+								<cms:text constant="phone"/>
+								<cms:raw file="../images/icon-phone.svg"/>
+							</a>
+						</div>					
+					</div>
+					<div class="header_content">
+						<div class="inner_wrap">
+							 <h1><cms:text constant="vgi_header"/></h1>
+							 <span><cms:text constant="vgi_header_desc"/></span>
+							 <span><cms:text constant="call_now"/></span>
+							 <a
+								href="'tel:'.urlencode(Language::getText('phone'))"
+								cms:eval="href"
+								class="phone"
+								>
+								<cms:text constant="phone"/>
+								<cms:raw file="../images/icon-phone.svg"/>
+							</a>
+							<div class="product">
+								<span><cms:text constant="kf10"/></span>
+								<span><cms:text constant="kf10_desc"/></span>
+							</div>
+
+						</div>
+						<div class="form_wrap">
+							<div class="inner_wrap">
+								<span><cms:text constant="form_title"/></span>
+								<cms:module
+										name="contact_form"
+										action="show"
+										text_id="contact_form"
+									/>
+							</div>
+						</div>
+					</div>
+			</header>
+			<!-- FEATURES PAR OF THE SITE -->
+			<div class="feature_wrap">
+				<div class="inner_wrap">
+					<span><cms:text constant="feature_title"/></span>
+					<div class="features">
+						<cms:module
+								name="articles"
+								action="show"
+								text_id="feature_right"
+								template="parts/article_noHeading.xml"
+						/>
+						<cms:module
+								name="articles"
+								action="show"
+								text_id="feature_center"
+								template="parts/article_noHeading.xml"
+						/>
+						<cms:module
+								name="articles"
+								action="show"
+								text_id="feature_left"
+								template="parts/article_noHeading.xml"
+						/>
+					</div>
+				</div>
+			</div>
+			<!-- ABOUT US SECTION -->
+			<div class="about_us">
+				<div class="inner_wrap">
+					<cms:module
+								name="articles"
+								action="show"
+								text_id="about"
+						/>
+				</div>
+			</div>
+			<!-- COMPONENTS SECTION -->
+			<div class="components">
+				<div class="inner_wrap">
+					<cms:module
+								name="articles"
+								action="show"
+								text_id="component"
+						/>
+					
+				</div>
+			</div>
+			<!-- THE BOTTOM PART OF THE SITE -->
+			<footer>
+				<div class="content">
+					<div class="inner_wrap">
+						<span><cms:text constant="vgi_header"/></span>
+						 <span><cms:text constant="vgi_header_desc"/></span>
+						 <span><cms:text constant="call_now"/></span>
+						 <a
+							href="'tel:'.urlencode(Language::getText('phone'))"
+							cms:eval="href"
+							class="phone"
+							>
+							<cms:text constant="phone"/>
+							<cms:raw file="../images/icon-phone.svg"/>
+						</a>
+						<div class="footer_form">
+							 <span><cms:text constant="form_title"/></span>
+								<cms:module
+											name="contact_form"
+											action="show"
+											text_id="contact_form"
+										/>	
+						</div>	
+					</div>
+				</div>
+				<div class="copyright">
+					<div class="inner_wrap">
+						<div class="hebrew_rights">
+							<span><cms:text constant="license"/></span>
+							<span><cms:text constant="license2"/></span>
+							<span><cms:text constant="license3"/></span>
+						</div>
+						<div class="english_rights">
+							<span><cms:text constant="designed"/><a href="http://way2cu.com">
+								<cms:text constant="way2cu"/>
+							</a>
+						</span>
+							<span><cms:text constant="promoted"/><a href="http://oxerve.com">
+								<cms:text constant="oxere"/>
+							</a>
+						</span>
+							<span><cms:text constant="rights"/></span>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</body>
 	</html>
 </document>
