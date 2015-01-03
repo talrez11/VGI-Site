@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
+	<language name="Hebrew" short="he" rtl="yes" default="yes">
+		<constant name="site_title">Site title</constant>
+		<constant name="vgi_header">דשן ביו-אורגני נוזלי</constant>
+		<constant name="vgi_header_desc">הזנה מינרלית של צמחים</constant>
+		<constant name="call_now">התקשרו עכשיו</constant>
+		<constant name="phone">09-7654321</constant>
+		<constant name="kf10">kf10</constant>
+		<constant name="kf10_desc">תכשיר מוכן לשימוש בריסוס או דרך מערכת ההשקיה</constant>
+		<constant name="kf20">kf20</constant>
+		<constant name="kf20_desc">גירסה מרוכזת מאד,המיועדת בעיקר לייצוא</constant>
+		<constant name="form_title">מלאו את הטופס ונציג שלנו יחזור אליכם</constant>
+		<constant name="send">שלח</constant>
+		<constant name="feature_title">פעולת הדשן</constant>
+		<constant name="designed">Designed and developed by</constant>
+		<constant name="promoted">promoted by</constant>
+		<constant name="rights">All rights reserved.</constant>
+		<constant name="way2cu">way2cu</constant>
+		<constant name="oxere">oxere</constant>
+		<constant name="license">יצרן ובעל רשיון:</constant>
+		<constant name="license2">VGI (ישראל) פיתוח מוצרים לחקלאות בע"מ</constant>
+		<constant name="license3">שיווק והפצה בישראל: "דשן טוב"</constant>
+	</language>
+
 	<language name="English" short="en">
+		<constant name="site_title">Site title</constant>
+	</language>
+
+	<language name="Arabic" short="ar" rtl="yes">
 		<constant name="site_title">Site title</constant>
 	</language>
 </document>
