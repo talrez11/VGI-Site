@@ -52,6 +52,7 @@ header div.logo {
 	background-color: white;
 	position: fixed;
 	width: 100%;
+	box-shadow: 2px 2px 64px rgba(0, 0, 0, 0.6);
 	z-index: 1;
 }
 
@@ -62,7 +63,7 @@ header div.logo div.inner_wrap {
 	padding-left: 10px;
 	background-image: url(../images/logo.svg);
 	background-repeat: no-repeat;
-	background-position: right center;
+	background-position: 165px center;
 	background-size:auto 50px;
 	text-align: left;
 
@@ -126,7 +127,7 @@ header div.header_content > div.inner_wrap > span:nth-of-type(3) {
 	padding-bottom: 15px;
 	text-align: center;
 	font-size: 1.4em;
-	text-shadow : 2px 2px 5px rgba(0, 0, 0, 0.6);
+	color: #33485d;
 }
 
 header div.header_content div.inner_wrap  div.product {
@@ -179,6 +180,446 @@ header div.header_content div.inner_wrap  div.product span:last-of-type {
 	display: block;
 	font-size: 1.1em;
 }
+
+header div.form_wrap  {
+	display: block;
+	background-image: url(../images/mobile-header-form-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	height: 390px;
+}
+
+header div.form_wrap > div.inner_wrap {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+header div.form_wrap > div.inner_wrap span {
+	display: block;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	font-size: 1.7em;
+	color:#33485d;
+}
+
+header div.form_wrap > div.inner_wrap form {
+	display: block;
+	padding-top: 15px;
+
+}
+
+header div.form_wrap > div.inner_wrap form label {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 15px;
+}
+
+header div.form_wrap > div.inner_wrap form label span {
+	display:inline-block;
+	vertical-align: top;
+	width: 50px;
+	font-size: 1.4em;
+}
+
+header div.form_wrap > div.inner_wrap form label input {
+	display: inline-block;
+	vertical-align: middle;
+	height: 40px;
+	border :1px solid rgba(35, 31, 32, 0.7);
+	font-size: 1.1em;
+}
+
+header div.form_wrap > div.inner_wrap form label input:focus {
+	border:1px solid #16A61E;
+}
+
+header div.form_wrap > div.inner_wrap form div.controls {
+	display: block;
+	padding-top: 15px;
+	text-align: center;
+
+}
+
+header div.form_wrap > div.inner_wrap form div.controls button {
+	width: 150px;
+	padding-right: 35px;
+	padding-left: 35px;	
+	background :linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 99.49%);
+	box-shadow : 2px 2px 7px rgba(0, 0, 0, 0.6);
+	border:1px solid rgba(35, 31, 32, 0.7) ;
+	border-radius: 5px;
+	font-size: 1.4em;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+}
+
+header div.form_wrap > div.inner_wrap form div.controls button:hover {
+	background :linear-gradient(0deg, rgba(118, 204, 30, 1) 0%, rgba(22, 166, 30, 1) 99.49%);
+}
+
+/*FEATURES SECTION MOBILE*/
+
+div.feature_wrap {
+	background-color: white;
+}
+
+div.feature_wrap div.inner_wrap {
+	
+	padding-bottom: 20px;
+}
+
+div.feature_wrap div.inner_wrap span {
+	display: block;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+	color: #33485d;
+}
+
+div.feature_wrap div.inner_wrap div.features {
+	display: block;
+	padding-top: 25px;
+	text-align: center;
+}
+div.feature_wrap div.inner_wrap div.features article {
+	display: block;
+	text-align: center;
+	padding-top: 220px;
+	color:#33485d;
+	position: relative;
+}
+
+div.feature_wrap div.inner_wrap div.features article p {
+	margin: 0px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 1.3em;
+}
+
+div.feature_wrap div.inner_wrap div.features article:nth-of-type(1):before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -100px;
+	background-image: url(../images/roots.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: 200px 200px;
+	border: 2px solid #26ad5f;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px; 	 
+} 
+
+div.feature_wrap div.inner_wrap div.features article:nth-of-type(2):before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -100px;
+	background-image: url(../images/microorganisms.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: 200px 200px;
+	border: 2px solid #26ad5f;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px; 	 
+} 
+
+div.feature_wrap div.inner_wrap div.features article:nth-of-type(3):before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -100px;
+	background-image: url(../images/dry-ground.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: 200px 200px;
+	border: 2px solid #26ad5f;
+	border-radius: 50%;
+	height: 200px;
+	width: 200px; 	 
+} 
+
+/*ABOUT US SECTION MOBILE*/
+
+div.about_us {
+	background-image: url(../images/mobile-about-us-background.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 100%;
+	height: 1030px;
+}
+
+div.about_us div.inner_wrap {
+	padding-bottom: 320px;
+}
+
+div.about_us div.inner_wrap article {
+	display: block;
+	padding-right: 15px;
+	padding-left: 15px;
+	color:#33485d;
+
+}
+
+div.about_us div.inner_wrap article h1 {
+	margin-top: 0px;	
+}
+
+div.about_us div.inner_wrap article p {
+	font-size: 1.2em;
+}
+
+/*COMPONENTS SECTION MOBILE*/
+
+div.components {
+	background-color: white;
+}
+
+div.components div.inner_wrap {
+	background-image: url(../images/tomato-plant.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: 90%;
+	height: 1170px;
+}
+
+div.components div.inner_wrap article {
+	display: block;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	color:#33485d;
+}
+
+div.components div.inner_wrap article h1 {
+	font-size: 2.4em;
+	margin-bottom:0px; 
+	margin-top: 0px;
+}
+
+div.components div.inner_wrap article p {
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+/*FOOTER SECTION MOBILE*/
+
+footer div.content {
+	padding-top: 20px;
+	background-image: url(../images/mobile-footer-background-2.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size:100%;
+	height:1050px;
+}
+
+footer div.content div.inner_wrap {
+	background-image: url(../images/logo.svg);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-size: auto 70px;
+}
+
+footer div.content div.inner_wrap > span:nth-of-type(1) {
+	display: block;
+	padding-top: 100px;
+	margin: 0px;
+	text-align: center;
+	font-weight : bold;
+	font-size: 2.3em;
+	color:#33485d;
+}
+
+footer div.content div.inner_wrap > span:nth-of-type(2) {
+	display: block;
+	font-size: 1.8em;
+	text-align: center;
+	color: #33485d;
+}
+
+footer div.content div.inner_wrap > span:nth-of-type(3) {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	font-size: 1.7em;
+	color: #33485d;
+	text-align: center;
+}
+
+footer div.content div.inner_wrap a.phone {
+	display: block;
+	width: 220px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	box-shadow : 2px 2px 7px rgba(0, 0, 0, 0.6);
+	transition:all 0.3s;
+}
+
+/*FOOTER FORM MOBILE*/
+
+footer div.content div.inner_wrap div.footer_form {
+	display: block;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 300px;
+}
+
+footer div.content div.inner_wrap div.footer_form > span {
+	display: block;
+	padding-top: 80px;
+	text-align: center;
+	color: white;
+	font-size: 1.7em;
+}
+
+footer div.content div.inner_wrap div.footer_form form {
+	display: block;
+	color:#33485d;
+}
+
+footer div.content div.inner_wrap div.footer_form form label {
+	display: block;
+	padding-top: 25px;
+}
+
+footer div.content div.inner_wrap div.footer_form form label:nth-of-type(1) {
+	padding-top: 5px;
+}
+footer div.content div.inner_wrap div.footer_form form label span {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 60px;
+	font-size: 1.4em;
+	color:white;
+
+}
+
+footer div.content div.inner_wrap div.footer_form form label input {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 250px;
+	height: 40px;
+	border: 1px solid rgba(35, 31, 32, 0.3); 
+	font-size: 1.6em;
+	transition:all 0.3s;
+}
+
+footer div.content div.inner_wrap div.footer_form form label input:focus {
+	border:1px solid #16A61E;
+}
+
+footer div.content div.inner_wrap div.footer_form form div.controls {
+	display: block;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+} 
+
+footer div.content div.inner_wrap div.footer_form form div.controls button {
+	padding-right: 50px;
+	padding-left: 50px;	
+	background :linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 99.49%);
+	box-shadow : 2px 2px 7px rgba(0, 0, 0, 0.6);
+	border:1px solid rgba(35, 31, 32, 0.7) ;
+	border-radius: 5px;
+	font-size: 1.8em;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+	transition:all 0.3s;
+}
+footer div.content div.inner_wrap div.footer_form form div.controls button:hover {
+background :linear-gradient(0deg, rgba(118, 204, 30, 1) 0%, rgba(22, 166, 30, 1) 99.49%);
+}
+
+footer div.copyright {
+	background-color: black;
+}
+
+footer div.copyright div.inner_wrap {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+footer div.copyright div.inner_wrap div.hebrew_rights {
+	display: block;
+	text-align: center;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+footer div.copyright div.inner_wrap div.hebrew_rights:after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -140px;
+	height: 1px;
+	background-color: white;
+	width: 280px;
+}
+
+footer div.copyright div.inner_wrap div.hebrew_rights span {
+	display: block;
+}
+
+footer div.copyright div.inner_wrap div.english_rights {
+	display:block;
+	padding-top: 15px;
+	background-image:url(../images/way2cu-logo.svg);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	background-size: 40px 40px;  
+	text-align: left;
+	direction: ltr;
+}
+
+footer div.copyright div.inner_wrap div.english_rights span {
+	display: block;
+	padding-left: 60px;
+	font-size: 0.9em;
+}
+
+footer div.copyright div.inner_wrap div.english_rights span a {
+	padding-left: 5px;
+}
+
+footer div.copyright div.inner_wrap div.english_rights span:nth-of-type(1) a {
+	color:#5bc2d8; 
+}
+
+footer div.copyright div.inner_wrap div.english_rights span:nth-of-type(2) a {
+	color:#fbc926; 
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
