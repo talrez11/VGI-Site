@@ -104,7 +104,8 @@ header div.header_content:before {
 	background-position: center;
 	background-size:auto 700px;
 	opacity: 0;
-	animation:swap2 10s;
+	animation:swap2 12s;
+	animation-iteration-count: infinite;
 	
 }
 
@@ -120,11 +121,11 @@ header div.header_content div.image3 {
 	background-position: center;
 	background-size:auto 700px;
 	opacity: 0;
-	animation:swap3 10s;
+	animation:swap3 12s;
+	animation-iteration-count: infinite;
 }
 
-header div.header_content div.image3:before {
-	content: '';
+header div.header_content div.image4 {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -135,12 +136,14 @@ header div.header_content div.image3:before {
 	background-position: center;
 	background-size:auto 700px;
 	opacity: 0;
-	animation:swap4 10s;
+	animation:swap4 12s;
+	animation-iteration-count: infinite;
 }
 
 @keyframes swap2 {
 	0%{opacity: 0;}
 	20%{opacity:1;}
+	40%{opacity:1;}
 	60%{opacity:0;}
 	80%{opacity:0;}
 	100%{opacity:0;}
@@ -149,6 +152,7 @@ header div.header_content div.image3:before {
 @keyframes swap3 {
 	0%{opacity: 0;}
 	20%{opacity:0;}
+	40%{opacity:1;}
 	60%{opacity:1;}
 	80%{opacity:0;}
 	100%{opacity:0;}
@@ -157,22 +161,35 @@ header div.header_content div.image3:before {
 @keyframes swap4 {
 	0%{opacity:0;}
 	20%{opacity:0;}
-	60%{opacity:0;}
-	80%{opacity:0;}
-	90%{opacity:1;}
-	100%{opacity:1;}
+	40%{opacity:0;}
+	60%{opacity:1;}
+	80%{opacity:1;}
+	100%{opacity:0;}
 }
+
+
 
 
 header div.header_content > div.inner_wrap {
 	display: block;
 	padding-top: 65px;
 	padding-bottom: 65px;
-	background-image: url(../images/stamp.svg),url(../images/kf10.png);
+	background-image: url(../images/stamp.svg);
 	background-repeat: no-repeat,no-repeat;
-	background-position: left 50px,330px 290px;
-	background-size: 240px 240px,auto 220px;
+	background-position: left 50px;
+	background-size: 240px 240px;
 	position: relative;
+	animation:move_stamp 12s;
+/*	animation-iteration-count: infinite;*/
+}
+
+@keyframes move_stamp{
+	0%{background-position:left -240px,330px 290px }
+	20%{background-position:left 50px,330px 290px;}
+	40%{background-position:left 50px,330px 290px;}
+	60%{background-position:left 50px,330px 290px;}
+	80%{background-position:left 50px,330px 290px;}
+	100%{background-position:left 50px,330px 290px;}
 }
 
 header div.header_content div.inner_wrap h1 {
@@ -182,6 +199,11 @@ header div.header_content div.inner_wrap h1 {
 	font-size: 5.6em;
 	color: #FFFFFF;
 	text-shadow : 2px 2px 5px rgba(0, 0, 0, 0.6);
+	position: relative;
+	left: 0%;
+	animation:element_to_left 12s;
+
+
 }
 
 header div.header_content > div.inner_wrap > span:first-of-type {
@@ -189,6 +211,11 @@ header div.header_content > div.inner_wrap > span:first-of-type {
 	font-size: 3.7em;
 	color: #FFFFFF;
 	text-shadow : 2px 2px 5px rgba(0, 0, 0, 0.6);
+	position: relative;
+	left: 0%;
+	animation:element_to_left 12s;
+	animation-delay:0.1s;
+
 }
 
 header div.header_content > div.inner_wrap > span:last-of-type {
@@ -199,6 +226,11 @@ header div.header_content > div.inner_wrap > span:last-of-type {
 	font-size: 2.4em;
 	text-align: center;
 	text-shadow : 2px 2px 5px rgba(0, 0, 0, 0.6);
+	position: relative;
+	left: 0%;
+	animation:element_to_left 12s;
+	animation-delay:0.3s;
+
 }
 
 header div.header_content div.inner_wrap a.phone {
@@ -206,25 +238,97 @@ header div.header_content div.inner_wrap a.phone {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	transition:all 0.3s;
+	position: relative;
+	left: 0%;
+	animation:element_to_left 12s;
+	animation-delay:0.3s;
+
 }
 
-header div.header_content div.inner_wrap  div.product {
+@keyframes element_to_left {
+	0%{left:100%;}
+	20%{left:0%;}
+	40%{left:0%;}
+	60%{left:0%;}
+	80%{left:0%;}
+	100%{left:0%;}
+}
+
+header div.header_content div.inner_wrap  div.product:first-of-type{
 	display: block;
 	width: 300px;
 	position: absolute;
-	left: 0px;
-	bottom: 50px;	
+	background-image: url(../images/kf10.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size:auto 175px; 
+	left: -100%;
+	bottom: 50px;
+	animation:product 12s;
+	animation-iteration-count: infinite;	
 }
-header div.header_content div.inner_wrap  div.product span:first-of-type {
+
+
+@keyframes product {
+	0%{left:-100%;}
+	20%{left:70px;}
+	30%{left:70px;}
+	40%{left:70px;}
+	60%{left:-100%;}
+	80%{left:-100%;}
+	100%{left:-100%;}
+}
+header div.header_content div.inner_wrap  div.product:first-of-type span:first-of-type {
 	display: block;
+	padding-right: 160px;
 	font-size: 5em;
 	font-weight: 900;
 	text-transform: uppercase;	
 }
 
-header div.header_content div.inner_wrap  div.product span:last-of-type {
+header div.header_content div.inner_wrap  div.product:first-of-type span:last-of-type {
 	display: block;
-	font-size: 1.7em;
+	font-size: 1.2em;
+	width: 200px;
+	padding-right: 160px;
+}
+
+header div.header_content div.inner_wrap  div.product:last-of-type{
+	display: block;
+	width: 300px;
+	position: absolute;
+	background-image: url(../images/kf10-20.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size:auto 185px; 
+	left: -100%;
+	bottom: 50px;
+	animation:product2 12s;
+	animation-iteration-count: infinite;	
+}
+
+@keyframes product2 {
+	0%{left:-100%;}
+	20%{left:-100%;}
+	30%{left:-100%;}
+	40%{left:-100%;}
+	60%{left:70px;}
+	80%{left:70px;}
+	100%{left:-100%;}
+}
+header div.header_content div.inner_wrap  div.product:last-of-type span:first-of-type {
+	display: block;
+	padding-right: 120px;
+	font-size: 5em;
+	font-weight: 900;
+	text-transform: uppercase;	
+}
+
+header div.header_content div.inner_wrap  div.product:last-of-type span:last-of-type {
+	display: block;
+	font-size: 1.2em;
+	width: 200px;
+	padding-right: 120px;
 }
 
 header div.form_wrap  {
@@ -473,7 +577,7 @@ footer div.content div.inner_wrap > span:nth-of-type(1) {
 	padding-top: 310px;
 	margin: 0px;
 	font-weight : bold;
-	font-size: 5.6em;
+	font-size: 5.4em;
 	color: #FFFFFF;
 	text-shadow : 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
