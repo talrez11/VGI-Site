@@ -28,7 +28,10 @@
 							</cms:mobile>
 						</div>					
 					</div>
-					<div class="header_content">
+					<!-- ANIMATIN -->
+					
+					<div class="header_content">						
+						<div class="image3"></div>						
 						<div class="inner_wrap">
 							 <h1><cms:text constant="vgi_header"/></h1>
 							 <span><cms:text constant="vgi_header_desc"/></span>
