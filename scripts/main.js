@@ -7,6 +7,12 @@
  */
 
 function on_site_load() {
+
+	$("div.image4").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function(){ 
+
+		$('header div.header_content').css('')
+		
+	 });
 }
 
 $(on_site_load);
