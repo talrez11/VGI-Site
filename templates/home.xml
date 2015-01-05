@@ -31,7 +31,8 @@
 					<!-- ANIMATIN -->
 					
 					<div class="header_content">						
-						<div class="image3"></div>						
+						<div class="image3"></div>
+						<div class="image4"></div>							
 						<div class="inner_wrap">
 							 <h1><cms:text constant="vgi_header"/></h1>
 							 <span><cms:text constant="vgi_header_desc"/></span>
@@ -51,6 +52,12 @@
 										<span><cms:text constant="kf10"/></span>
 										<span><cms:text constant="kf10_desc"/></span>
 								</div>
+							<cms:desktop>	
+								<div class="product">
+										<span><cms:text constant="kf20"/></span>
+										<span><cms:text constant="kf20_desc"/></span>
+								</div>
+							</cms:desktop>	
 							<cms:mobile>
 								<div class="product">
 										<span><cms:text constant="kf20"/></span>
