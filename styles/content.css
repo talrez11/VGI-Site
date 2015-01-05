@@ -104,7 +104,7 @@ header div.header_content:before {
 	background-position: center;
 	background-size:auto 700px;
 	opacity: 0;
-	animation:swap2 8s;
+	animation:swap2 10s;
 	
 }
 
@@ -120,7 +120,7 @@ header div.header_content div.image3 {
 	background-position: center;
 	background-size:auto 700px;
 	opacity: 0;
-	animation:swap3 8s;
+	animation:swap3 10s;
 }
 
 header div.header_content div.image3:before {
@@ -130,16 +130,13 @@ header div.header_content div.image3:before {
 	left: 0px;
 	width: 100%;
 	height:100%;
-	background-image: url(../images/slider-kf20 - blured.jpg);
+	background-image: url(../images/slider-kf20-blured.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:auto 700px;
 	opacity: 0;
-	animation:swap4 8s;
+	animation:swap4 10s;
 }
-
-
-
 
 @keyframes swap2 {
 	0%{opacity: 0;}
@@ -161,9 +158,9 @@ header div.header_content div.image3:before {
 	0%{opacity:0;}
 	20%{opacity:0;}
 	60%{opacity:0;}
-	80%{opacity: 0;}
-	90%{opacity: 1;}
-	100%{opacity: 1;}
+	80%{opacity:0;}
+	90%{opacity:1;}
+	100%{opacity:1;}
 }
 
 
