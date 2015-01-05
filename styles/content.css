@@ -79,13 +79,93 @@ header div.logo div.inner_wrap a.phone .phone_svg {
 	fill:#16A61E;
 }
 
+
+
 header div.header_content {
-	background-image: url(../images/slider-kf10-blured.jpg);
+	background-image: url(../images/slider-kf10-2.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:auto 700px;
 	min-height: 665px; 
+	position: relative;
+	opacity: 1;
+
 }
+
+header div.header_content:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+	background-image: url(../images/slider-kf10-blured.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:auto 700px;
+	opacity: 0;
+	animation:swap2 8s;
+	
+}
+
+
+header div.header_content div.image3 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+	background-image: url(../images/slider-kf20.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:auto 700px;
+	opacity: 0;
+	animation:swap3 8s;
+}
+
+header div.header_content div.image3:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+	background-image: url(../images/slider-kf20 - blured.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:auto 700px;
+	opacity: 0;
+	animation:swap4 8s;
+}
+
+
+
+
+@keyframes swap2 {
+	0%{opacity: 0;}
+	20%{opacity:1;}
+	60%{opacity:0;}
+	80%{opacity:0;}
+	100%{opacity:0;}
+}
+
+@keyframes swap3 {
+	0%{opacity: 0;}
+	20%{opacity:0;}
+	60%{opacity:1;}
+	80%{opacity:0;}
+	100%{opacity:0;}
+}
+
+@keyframes swap4 {
+	0%{opacity:0;}
+	20%{opacity:0;}
+	60%{opacity:0;}
+	80%{opacity: 0;}
+	90%{opacity: 1;}
+	100%{opacity: 1;}
+}
+
 
 header div.header_content > div.inner_wrap {
 	display: block;
@@ -153,6 +233,8 @@ header div.header_content div.inner_wrap  div.product span:last-of-type {
 header div.form_wrap  {
 	display: block;
 	background:rgba(35, 31, 32, 0.7);
+	position: relative;
+	z-index: 9999;
 }
 
 header div.form_wrap > div.inner_wrap {
