@@ -42,9 +42,17 @@ a.phone:hover {
 	background-position: center top;
 	background-size: auto 100%;
 }
-a.phone .phone_svg{
+
+a.phone span {
+	display: inline-block;
+	vertical-align: top;
+}
+a.phone span .phone_svg{
 	display:inline-block;
-	padding-top: 8px;
+	vertical-align: top;
+	padding-right: 10px;
+	width: 100%;
+	height: 100%;
 	fill:white;
 }
 
@@ -68,14 +76,17 @@ header div.logo div.inner_wrap {
 
 }
 
-header div.logo div.inner_wrap a.phone {
+header div.logo div.inner_wrap a.phone  {
+	display: inline-block;
+	vertical-align: top;
 	background: white;
 	color: #16A61E;
 	box-shadow: none;
 }
 
-header div.logo div.inner_wrap a.phone .phone_svg {
-	padding-top: 8px;
+header div.logo div.inner_wrap a.phone span .phone_svg {
+	display: inline-block;
+	vertical-align: top;
 	fill:#16A61E;
 }
 
@@ -89,6 +100,7 @@ header div.header_content {
 	min-height: 665px; 
 	position: relative;
 	opacity: 1;
+	overflow: hidden;
 
 }
 
@@ -232,7 +244,7 @@ header div.header_content > div.inner_wrap > span:last-of-type {
 
 }
 
-header div.header_content div.inner_wrap a.phone {
+header div.header_content div.inner_wrap a.phone  {
 	margin-right: 120px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -427,7 +439,7 @@ div.feature_wrap div.inner_wrap div.features {
 	text-align: center;
 }
 
-div.feature_wrap div.inner_wrap div.features article {
+div.feature_wrap div.inner_wrap div.features div.article {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 220px;
@@ -436,14 +448,14 @@ div.feature_wrap div.inner_wrap div.features article {
 	position: relative;
 }
 
-div.feature_wrap div.inner_wrap div.features article p {
+div.feature_wrap div.inner_wrap div.features div.article p {
 	margin: 0px;
 	padding-left: 15px;
 	padding-right: 15px;
 	font-size: 1.3em;
 }
 
-div.feature_wrap div.inner_wrap div.features article:nth-of-type(1):before {
+div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(1):before {
 	content: "";
 	position: absolute;
 	top: 0px;
@@ -458,7 +470,7 @@ div.feature_wrap div.inner_wrap div.features article:nth-of-type(1):before {
 	height: 200px;
 	width: 200px; 	 
 } 
-div.feature_wrap div.inner_wrap div.features article:nth-of-type(2):before {
+div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(2):before {
 	content: "";
 	position: absolute;
 	top: 0px;
@@ -474,7 +486,7 @@ div.feature_wrap div.inner_wrap div.features article:nth-of-type(2):before {
 	width: 200px; 	 
 } 
 
-div.feature_wrap div.inner_wrap div.features article:nth-of-type(3):before {
+div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(3):before {
 	content: "";
 	position: absolute;
 	top: 0px;
@@ -510,7 +522,7 @@ div.about_us div.inner_wrap article {
 	width: 600px;
 }
 
-div.about_us div.inner_wrap article h1 {
+div.about_us div.inner_wrap article h2 {
 	font-size: 3.7em;
 }
 
@@ -540,7 +552,7 @@ div.components div.inner_wrap article {
 	color:#33485d;
 }
 
-div.components div.inner_wrap article h1 {
+div.components div.inner_wrap article h2 {
 	font-size: 3.7em;
 	margin-bottom:0px; 
 }
@@ -764,6 +776,14 @@ footer div.copyright div.inner_wrap div.english_rights span:nth-of-type(2) a {
 
 	header div.header_content div.inner_wrap a.phone {
 		margin-right: 150px;
+	}
+	header div.header_content div.inner_wrap a.phone span:first-of-type {
+
+		margin-right: -15px;
+	}
+	header div.header_content div.inner_wrap a.phone span:last-of-type {
+
+		margin-right: -15px;
 	}
 
 	header div.form_wrap > div.inner_wrap form {

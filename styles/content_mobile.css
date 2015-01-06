@@ -22,7 +22,7 @@ a.phone{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 20px;
-	padding-left: 25px;
+	padding-left: 10px;
 	background :linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 99.49%);	
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -36,12 +36,18 @@ a.phone{
  	transition:all 0.3s;
 }
 
-a.phone .phone_svg{
+a.phone span {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0.9em;
+}
+a.phone span .phone_svg{
 	display:inline-block;
 	vertical-align: top;
-	width: 35px;
+	padding-right: 10px;
+	width: 75%;
+	height: 100%;
 	fill:white;
-
 }
 
 header {
@@ -69,16 +75,20 @@ header div.logo div.inner_wrap {
 
 }
 
-header div.logo div.inner_wrap a.phone {
+header div.logo div.inner_wrap a.phone  {
+	display: inline-block;
+	vertical-align: top;
 	background: white;
 	color: #16A61E;
 	box-shadow: none;
 }
 
-header div.logo div.inner_wrap a.phone .phone_svg {
+header div.logo div.inner_wrap a.phone span .phone_svg {
+	display: inline-block;
+	vertical-align: top;
 	fill:#16A61E;
-
 }
+
 
 header div.header_content {
 	background-image: url(../images/mobile-header-background.jpg);
@@ -286,7 +296,7 @@ div.feature_wrap div.inner_wrap div.features {
 	padding-top: 25px;
 	text-align: center;
 }
-div.feature_wrap div.inner_wrap div.features article {
+div.feature_wrap div.inner_wrap div.features div.article {
 	display: block;
 	text-align: center;
 	padding-top: 220px;
@@ -294,7 +304,7 @@ div.feature_wrap div.inner_wrap div.features article {
 	position: relative;
 }
 
-div.feature_wrap div.inner_wrap div.features article p {
+div.feature_wrap div.inner_wrap div.features div.article p {
 	margin: 0px;
 	padding-bottom: 20px;
 	padding-left: 15px;
@@ -302,7 +312,7 @@ div.feature_wrap div.inner_wrap div.features article p {
 	font-size: 1.3em;
 }
 
-div.feature_wrap div.inner_wrap div.features article:nth-of-type(1):before {
+div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(1):before {
 	content: "";
 	position: absolute;
 	top: 0px;
@@ -318,7 +328,7 @@ div.feature_wrap div.inner_wrap div.features article:nth-of-type(1):before {
 	width: 200px; 	 
 } 
 
-div.feature_wrap div.inner_wrap div.features article:nth-of-type(2):before {
+div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(2):before {
 	content: "";
 	position: absolute;
 	top: 0px;
@@ -334,7 +344,7 @@ div.feature_wrap div.inner_wrap div.features article:nth-of-type(2):before {
 	width: 200px; 	 
 } 
 
-div.feature_wrap div.inner_wrap div.features article:nth-of-type(3):before {
+div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(3):before {
 	content: "";
 	position: absolute;
 	top: 0px;
@@ -372,7 +382,7 @@ div.about_us div.inner_wrap article {
 
 }
 
-div.about_us div.inner_wrap article h1 {
+div.about_us div.inner_wrap article h2 {
 	margin-top: 0px;	
 }
 
@@ -402,7 +412,7 @@ div.components div.inner_wrap article {
 	color:#33485d;
 }
 
-div.components div.inner_wrap article h1 {
+div.components div.inner_wrap article h2 {
 	font-size: 2.4em;
 	margin-bottom:0px; 
 	margin-top: 0px;
