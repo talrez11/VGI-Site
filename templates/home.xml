@@ -19,8 +19,8 @@
 									cms:eval="href"
 									class="phone"
 									>
-									<cms:text constant="phone"/>
-									<cms:raw file="../images/icon-phone.svg"/>
+									<span><cms:text constant="phone"/></span>
+									<span><cms:raw file="../images/icon-phone.svg"/></span>
 								</a>
 							</cms:desktop>
 							<cms:mobile>
@@ -45,9 +45,9 @@
 								cms:eval="href"
 								class="phone"
 								>
-								<cms:text constant="phone"/>
-								<cms:raw file="../images/icon-phone.svg"/>
-							</a>
+								<span><cms:text constant="phone"/></span>
+								<span><cms:raw file="../images/icon-phone.svg"/></span>
+								</a>
 								<div class="product">
 										<span><cms:text constant="kf10"/></span>
 										<span><cms:text constant="kf10_desc"/></span>
@@ -111,6 +111,7 @@
 								name="articles"
 								action="show"
 								text_id="about"
+								template="parts/article_heading.xml"
 						/>
 				</div>
 			</div>
@@ -121,6 +122,7 @@
 								name="articles"
 								action="show"
 								text_id="component"
+								template="parts/article_heading.xml"
 						/>
 					
 				</div>
@@ -137,8 +139,8 @@
 							cms:eval="href"
 							class="phone"
 							>
-							<cms:text constant="phone"/>
-							<cms:raw file="../images/icon-phone.svg"/>
+							<span><cms:text constant="phone"/></span>
+							<span><cms:raw file="../images/icon-phone.svg"/></span>
 						</a>
 						<div class="footer_form">
 							 <span><cms:text constant="form_title"/></span>
