@@ -180,16 +180,15 @@ header div.header_content > div.inner_wrap {
 	background-size: 240px 240px;
 	position: relative;
 	animation:move_stamp 12s;
-/*	animation-iteration-count: infinite;*/
 }
 
 @keyframes move_stamp{
-	0%{background-position:left -240px,330px 290px }
-	20%{background-position:left 50px,330px 290px;}
-	40%{background-position:left 50px,330px 290px;}
-	60%{background-position:left 50px,330px 290px;}
-	80%{background-position:left 50px,330px 290px;}
-	100%{background-position:left 50px,330px 290px;}
+	0%{background-position:left -240px;}
+	20%{background-position:left 50px;}
+	40%{background-position:left 50px;}
+	60%{background-position:left 50px;}
+	80%{background-position:left 50px;}
+	100%{background-position:left 50px;}
 }
 
 header div.header_content div.inner_wrap h1 {
@@ -738,9 +737,10 @@ footer div.copyright div.inner_wrap div.english_rights span:nth-of-type(2) a {
 /*TABLET VERSION*/
 
 @media (max-width: 1200px) {
-	body {
-	width: 1200px;
-}
+	body{
+		width: 1200px;
+	}
+
 	header div.logo div.inner_wrap {
 		background-position: 800px center;
 	}
@@ -831,6 +831,76 @@ footer div.copyright div.inner_wrap div.english_rights span:nth-of-type(2) a {
 	footer div.copyright div.inner_wrap div.hebrew_rights span {
 		padding-right: 30px;
 	}
+	header div.header_content div.inner_wrap  div.product:first-of-type{
+	display: block;
+	width: 300px;
+	position: absolute;
+	background-image: url(../images/kf10.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size:auto 175px; 
+	opacity: 0;
+	left:200px;
+	bottom: 50px;
+	animation:product 12s;
+	animation-iteration-count: infinite;	
+}
+
+
+@keyframes product {
+	0%{opacity:-0;}
+	20%{opacity:1;}
+	30%{opacity:1;}
+	40%{opacity:1;}
+	60%{opacity:0;}
+	80%{opacity:0;}
+	100%{opacity:0;}
+}
+header div.header_content div.inner_wrap  div.product:last-of-type{
+	display: block;
+	width: 300px;
+	position: absolute;
+	background-image: url(../images/kf10-20.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size:auto 185px; 
+	opacity: 0;
+	left: 200px;
+	bottom: 50px;
+	animation:product2 12s;
+	animation-iteration-count: infinite;	
+}
+
+@keyframes product2 {
+	0%{opacity:0;}
+	20%{opacity:0;}
+	30%{opacity:0;}
+	40%{opacity:0;}
+	60%{opacity:1;}
+	80%{opacity:1;}
+	100%{opacity:0;}
+}
+
+header div.header_content > div.inner_wrap {
+	display: block;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	background-image: url(../images/stamp.svg);
+	background-repeat: no-repeat,no-repeat;
+	background-position: 30px 50px;
+	background-size: 240px 240px;
+	position: relative;
+	animation:move_stamp 12s;
+}
+
+@keyframes move_stamp{
+	0%{background-position:30px -240px;}
+	20%{background-position:30px 50px;}
+	40%{background-position:30px 50px;}
+	60%{background-position:30px 50px;}
+	80%{background-position:30px 50px;}
+	100%{background-position:30px 50px;}
+}
 
 
 
