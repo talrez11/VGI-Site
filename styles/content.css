@@ -23,7 +23,7 @@ a.phone{
 	padding-bottom: 5px;
 	padding-right: 20px;
 	padding-left: 25px;
-	background :linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 99.49%);	
+	background :linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 99.49%);
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: auto 100%;
@@ -37,7 +37,7 @@ a.phone{
 }
 
 a.phone:hover {
-	background :linear-gradient(0deg, rgba(118, 204, 30, 1) 0%, rgba(22, 166, 30, 1) 99.49%);	
+	background :linear-gradient(0deg, rgba(118, 204, 30, 1) 0%, rgba(22, 166, 30, 1) 99.49%);
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: auto 100%;
@@ -97,7 +97,7 @@ header div.header_content {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:auto 700px;
-	min-height: 665px; 
+	min-height: 665px;
 	position: relative;
 	opacity: 1;
 	overflow: hidden;
@@ -118,7 +118,7 @@ header div.header_content:before {
 	opacity: 0;
 	animation:swap2 12s;
 	animation-iteration-count: infinite;
-	
+
 }
 
 
@@ -272,11 +272,11 @@ header div.header_content div.inner_wrap  div.product:first-of-type{
 	background-image: url(../images/kf10.png);
 	background-repeat: no-repeat;
 	background-position: right;
-	background-size:auto 175px; 
+	background-size:auto 175px;
 	left: -100%;
 	bottom: 50px;
 	animation:product 12s;
-	animation-iteration-count: infinite;	
+	animation-iteration-count: infinite;
 }
 
 
@@ -294,7 +294,7 @@ header div.header_content div.inner_wrap  div.product:first-of-type span:first-o
 	padding-right: 160px;
 	font-size: 5em;
 	font-weight: 900;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 
 header div.header_content div.inner_wrap  div.product:first-of-type span:last-of-type {
@@ -311,11 +311,11 @@ header div.header_content div.inner_wrap  div.product:last-of-type{
 	background-image: url(../images/kf10-20.png);
 	background-repeat: no-repeat;
 	background-position: right;
-	background-size:auto 185px; 
+	background-size:auto 185px;
 	left: -100%;
 	bottom: 50px;
 	animation:product2 12s;
-	animation-iteration-count: infinite;	
+	animation-iteration-count: infinite;
 }
 
 @keyframes product2 {
@@ -332,7 +332,7 @@ header div.header_content div.inner_wrap  div.product:last-of-type span:first-of
 	padding-right: 120px;
 	font-size: 5em;
 	font-weight: 900;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 
 header div.header_content div.inner_wrap  div.product:last-of-type span:last-of-type {
@@ -399,7 +399,7 @@ header div.form_wrap > div.inner_wrap form div.controls {
 
 header div.form_wrap > div.inner_wrap form div.controls button {
 	padding-right: 35px;
-	padding-left: 35px;	
+	padding-left: 35px;
 	background :linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 99.49%);
 	box-shadow : 2px 2px 7px rgba(0, 0, 0, 0.6);
 	border:1px solid rgba(35, 31, 32, 0.7) ;
@@ -468,8 +468,8 @@ div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(1):before {
 	border: 2px solid #26ad5f;
 	border-radius: 50%;
 	height: 200px;
-	width: 200px; 	 
-} 
+	width: 200px;
+}
 div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(2):before {
 	content: "";
 	position: absolute;
@@ -483,8 +483,8 @@ div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(2):before {
 	border: 2px solid #26ad5f;
 	border-radius: 50%;
 	height: 200px;
-	width: 200px; 	 
-} 
+	width: 200px;
+}
 
 div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(3):before {
 	content: "";
@@ -499,8 +499,8 @@ div.feature_wrap div.inner_wrap div.features div.article:nth-of-type(3):before {
 	border: 2px solid #26ad5f;
 	border-radius: 50%;
 	height: 200px;
-	width: 200px; 	 
-} 
+	width: 200px;
+}
 
 /*ABOUT US SECTION*/
 
@@ -554,7 +554,7 @@ div.components div.inner_wrap article {
 
 div.components div.inner_wrap article h2 {
 	font-size: 3.7em;
-	margin-bottom:0px; 
+	margin-bottom:0px;
 }
 
 div.components div.inner_wrap article p {
@@ -662,7 +662,7 @@ footer div.content div.inner_wrap div.footer_form form label input {
 	margin-right: 20px;
 	width: 300px;
 	height: 50px;
-	border: 1px solid rgba(35, 31, 32, 0.3); 
+	border: 1px solid rgba(35, 31, 32, 0.3);
 	font-size: 1.6em;
 	transition:all 0.3s;
 }
@@ -676,11 +676,11 @@ footer div.content div.inner_wrap div.footer_form form div.controls {
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
-} 
+}
 
 footer div.content div.inner_wrap div.footer_form form div.controls button {
 	padding-right: 75px;
-	padding-left: 75px;	
+	padding-left: 75px;
 	background :linear-gradient(0deg, rgba(22, 166, 30, 1) 0%, rgba(118, 204, 30, 1) 99.49%);
 	box-shadow : 2px 2px 7px rgba(0, 0, 0, 0.6);
 	border:1px solid rgba(35, 31, 32, 0.7) ;
@@ -724,7 +724,7 @@ footer div.copyright div.inner_wrap div.english_rights {
 	background-image:url(../images/way2cu-logo.svg);
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 50px 50px;  
+	background-size: auto 50px;
 	text-align: left;
 	direction: ltr;
 }
@@ -739,11 +739,11 @@ footer div.copyright div.inner_wrap div.english_rights span a {
 }
 
 footer div.copyright div.inner_wrap div.english_rights span:nth-of-type(1) a {
-	color:#5bc2d8; 
+	color:#5bc2d8;
 }
 
 footer div.copyright div.inner_wrap div.english_rights span:nth-of-type(2) a {
-	color:#fbc926; 
+	color:#fbc926;
 }
 
 /*TABLET VERSION*/
@@ -793,7 +793,7 @@ footer div.copyright div.inner_wrap div.english_rights span:nth-of-type(2) a {
 	header div.form_wrap > div.inner_wrap form div.controls button {
 		height: 50px;
 	}
-	
+
 	div.about_us div.inner_wrap {
 		padding top: 0px;
 		padding-bottom: 0px;
@@ -858,12 +858,12 @@ footer div.copyright div.inner_wrap div.english_rights span:nth-of-type(2) a {
 	background-image: url(../images/kf10.png);
 	background-repeat: no-repeat;
 	background-position: right;
-	background-size:auto 175px; 
+	background-size:auto 175px;
 	opacity: 0;
 	left:200px;
 	bottom: 50px;
 	animation:product 12s;
-	animation-iteration-count: infinite;	
+	animation-iteration-count: infinite;
 }
 
 
@@ -883,12 +883,12 @@ header div.header_content div.inner_wrap  div.product:last-of-type{
 	background-image: url(../images/kf10-20.png);
 	background-repeat: no-repeat;
 	background-position: right;
-	background-size:auto 185px; 
+	background-size:auto 185px;
 	opacity: 0;
 	left: 200px;
 	bottom: 50px;
 	animation:product2 12s;
-	animation-iteration-count: infinite;	
+	animation-iteration-count: infinite;
 }
 
 @keyframes product2 {
